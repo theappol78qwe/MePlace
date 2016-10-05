@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="User">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/quantum_ic_art_track_grey600_48"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_Chat"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Chat" />
+        </menu>
+
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Groups">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_group_family"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="Family" />
+                <item
+                    android:id="@+id/nav_group_friends"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Friends" />
+                <item
+                    android:id="@+id/nav_group_vip"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="VIP" />
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_histroy"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="History" />
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/common_google_signin_btn_icon_dark_normal"
+                android:title="Sign Out" />
+
+        </menu>
+    </item>
+
+</menu>
