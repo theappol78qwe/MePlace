@@ -17,7 +17,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.hossam.devloper.meplace.ActivityNavigation.ChatActivty;
+import com.hossam.devloper.meplace.ActivityNavigation.ChatActivity;
+import com.hossam.devloper.meplace.Contracts.Normal;
 import com.hossam.devloper.meplace.R;
 import com.hossam.devloper.meplace.Services;
 import com.hossam.devloper.meplace.Taps.SlidingTabLayout;
@@ -121,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (id == R.id.nav_Chat) {
 
-            startActivity(new Intent(this, ChatActivty.class));
+            startActivity(new Intent(this, ChatActivity.class).putExtra(Normal.UserString,FirebaseAuth.getInstance().getCurrentUser().getUid()));
 
         } else if (id == R.id.nav_group_family) {
 
@@ -136,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mAuth = FirebaseAuth.getInstance();
             mAuth.signOut();
             finish();
-            startActivity(new Intent(this, LoginActivity.class));
+            startActivity(new Intent(this, Login.class));
 
         }
 
