@@ -1,0 +1,11 @@
+package com.hossam.devloper.meplace.ActivityNavigatio.Contracts;
+
+/**
+ * Created by kareem on 10/6/2016.
+ */
+
+public class Normal {
+    public static final String User1String = "User1UID";
+    public static final String User2String = "User2UID";
+    public static final String UserString = "UserUID";
+}
